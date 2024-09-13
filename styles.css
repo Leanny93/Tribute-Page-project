@@ -1,0 +1,103 @@
+
+@keyframes onHoverAnimation {
+    0% {
+        background-color: #f3f2ee;  
+        box-shadow: 0px 0px 20px 10px #f3f2ee;
+    }
+    100% {
+        background-color: #f5deab;
+        box-shadow: 0px 0px 20px 10px #f5deab;
+    }
+}
+body{
+    font-family: tahoma, sans-serif;
+    margin: 40px 5px;
+    background-color: #f5f2ed;
+  }
+  
+  main{
+    background-color: #f0ebe1;
+    border-radius: 10px;
+  }
+  
+  h1, h3, #title, figcaption {
+    text-align: center;
+    color: #051a30;
+  }
+  
+  h1  {
+    margin: 25px 0 0 0;
+    padding-top: 50px;
+    font-size: 36px;
+  }
+  
+  #title {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  #image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    
+  }
+  #img-div {
+    background-color: #f5deab;
+    box-shadow: 0px 0px 100px 60px #f5deab;
+    padding: 20px;
+    margin: .7em;
+  } 
+  figcaption {
+    font-size: 14px; 
+    padding-top: 5px;
+  }
+  
+  .cite {
+    max-width: 80%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 120px;
+    margin-top: 60px;
+    font-style: italic;
+    animation-duration: 3s; /* same as transition duration */
+    animation-timing-function: linear; /* kind of same as transition timing */
+    animation-delay: 0ms; /* same as transition delay */
+    animation-iteration-count: infinite; /* set to 2 to make it run twice, or Infinite to run forever!*/
+    animation-direction: alternate; /* can be set to "alternate" to run animation, then run it backwards.*/
+    animation-fill-mode: none; /* can be used to retain keyframe styling after animation, with "forwards" */
+    animation-play-state: running; /* can be set dynamically to pause mid animation*/
+    
+  }
+  cite {
+    text-align: left;
+    margin-left: 120px;
+    color: #a65c02;
+    
+  }
+  #more-about {
+    
+    max-width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  .cite:hover {
+    animation-name: onHoverAnimation;
+  }
+  .bullet-info {
+    color: #051a30;
+    line-height: 1.8;
+    margin: 20px auto 50px auto;
+    text-align: left;
+  }
+  li {
+    margin: 0 50px;
+  }
+  
+  #tribute-link, #bible-link {
+    color: #c26b02;
+    text-decoration: none;
+  }
